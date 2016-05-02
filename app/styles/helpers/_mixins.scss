@@ -1,0 +1,18 @@
+// Bourbon variables
+$retina-suffix: @2x;
+
+@include disable-prefix-for-all();
+
+// Fix no working `-webkit-text-size-adjust: 100%;` in Android.
+@mixin fix-text-size-adjust {
+	background-image: linear-gradient(transparent, transparent);
+}
+
+// // Set one static retina image
+// @retinaBackground($image, $ext = 'png') {
+// 	background-image url('../images/' + $image + '.' + $ext)
+
+// 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+// 		background-image url('../images/' + $image + '@2x.' + $ext)
+// 	}
+// }
